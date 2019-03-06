@@ -51,22 +51,8 @@
         android:text="Agregar "
         android:textSize="30sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/editText1"
+        app:layout_constraintBottom_toTopOf="@+id/etNewSalon"
         app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/b5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="316dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginBottom="67dp"
-        android:text="ok"
-        app:layout_constraintBottom_toTopOf="@+id/b3"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -81,21 +67,19 @@
         android:text="SALON: "
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toStartOf="@+id/editText1"
+        app:layout_constraintEnd_toStartOf="@+id/etNewSalon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/etNewSalon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="17dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="196dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/b5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -125,43 +109,50 @@
         android:text="EDIFICIO:"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editText3"
+        app:layout_constraintEnd_toStartOf="@+id/etNewEdificio"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/etNewSede"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="51dp"
-        android:layout_marginBottom="125dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/b5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/editText1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/etNewSalon" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/etNewEdificio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
         android:layout_marginEnd="51dp"
-        android:layout_marginBottom="39dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/b5"
+
+        app:layout_constraintBottom_toTopOf="@+id/buttonADD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/etNewSede" />
 
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:layout_constraintVertical_bias="1.0" />
+    <Button
+        android:id="@+id/buttonADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginEnd="149dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/b3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewEdificio" />
 
 </android.support.constraint.ConstraintLayout>

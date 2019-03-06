@@ -30,7 +30,7 @@ public class HomeFragment extends Fragment {
         View view =inflater.inflate(R.layout.fragment_home, container, false);
        button1=view.findViewById(R.id.b1);
        button2=view.findViewById(R.id.b4);
-       button3=view.findViewById(R.id.b5);
+       button3=view.findViewById(R.id.bt9);
        button1.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
